@@ -1,0 +1,22 @@
+DECLEAR count as INTEGER
+DECLEAR str as STRING
+DECLEAR newStr as STRING
+
+count = 0
+newStr = ""
+str = ""
+
+OUTPUT "Enter a string for verbing: "
+INPUT str
+
+IF LEN(str) > 2 THEN
+	IF RIGHT(str,3) = ing THEN
+		newStr = str + ly
+		OUTPUT newStr
+	ELSE
+		newStr = str + ing
+		OUTPUT newStr
+	ENDIF
+ELSE
+	OUTPUT str
+ENDIF	
